@@ -10,18 +10,26 @@
 </head>
 <body>
 <!-- header section start -->
-    <header class="d-flex py-4">
-        <a href="/" class="d-flex align-items-center mb-3 ms-5 px-5 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <p class="h4">Abacus Convention Center</p>
+<header class="d-flex py-4">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a href="/" class="d-flex align-items-center mb-3 ms-5 px-5 mb-md-0 text-dark text-decoration-none">
+        <p class="h4 fw-bold">Abacus Convention Center</p>
         </a>
-
-          <ul class="nav nav-pills me-5 px-5">
-            <li class="nav-item"><a href="#" class="nav-link text-dark text-decoration-none">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-dark text-decoration-none">About Us</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-dark text-decoration-none">Contact</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-dark text-decoration-none">Subscribe</a></li>
-        </ul>
-    </header>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto ps-5">
+              <a class="nav-link active ms-4" aria-current="page" href="#">Home</a>
+              <a class="nav-link ms-4 text-dark" href="#">About Us</a>
+              <a class="nav-link ms-4 text-dark" href="#">Contact</a>
+              <a class="nav-link ms-4 text-dark" href="#">Subscribe</a>
+            </div>
+          </div>
+    </div>
+  </nav>
+</header>
 <!-- header section end -->
 
 <!-- banner section start -->
@@ -80,10 +88,10 @@
 <!-- wedding section start -->
 <div class="card px-5 py-5">
     <div class="row gx-3 ">
-      <div class="col-md-6 ps-5 py-5">
+      <div class="col-md-6 order-lg-1 order-sm-2 ps-5 py-5">
         <img src="images/wedding.png" class="img-fluid rounded-start" alt="...">
       </div>
-      <div class="d-flex align-items-center col-md-6">
+      <div class="d-flex align-items-center col-md-6 order-lg-2 order-sm-1">
         <div class="card-body">
           <h2 class="card-title">Every moment is precious</h2>
           <p class="card-text">Wedding is a very special day for the bride &groom.It's a very <br>precious moment to them. Our motive is to make more enjoyable this day for the bride,groom & their nearest one.</p>
@@ -101,7 +109,7 @@
 <!-- package section start -->
 <p class="h2 my-5 d-flex align-items-center justify-content-center">Our Package</p>
     <div class="container">
-        <div class="row row-cols-lg-4">
+        <div class="row row-cols-lg-4 row-cols-1">
             <div class="col">
                 <div class="card border border-light mt-5">
                 <div class="card-body">
@@ -133,7 +141,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card bg-primary shadow-lg mb-5 rounded-4">
+                <div class="container-fluid card bg-primary shadow-lg mb-5 rounded-4">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     Hot
                   <span class="visually-hidden">Most popular</span>
@@ -213,7 +221,7 @@
 <p class="h2 my-5 d-flex align-items-center justify-content-center">Frequently Asked Question</p>
 <div class="container d-flex">
   <div class="row row-cols-sm-1">
-  <div class="accordion accordion-flush col-md-6" id="accordionFlushExample">
+  <div class="accordion accordion-flush col-md-6 order-lg-1 order-sm-2" id="accordionFlushExample">
     <div class="accordion-item">
       <h2 class="accordion-header" id="flush-headingOne">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -255,7 +263,7 @@
       </div>
     </div>
   </div>
-  <div class="col-md-6 py-4">
+  <div class="col-md-6 order-lg-2 order-sm-1 py-4">
   <img src="images/people.png" alt="">
   </div>
   </div>
@@ -264,12 +272,16 @@
 
 <!-- footer section start -->
 <footer>
-  <div class="d-flex flex-column flex-sm-row justify-content-between py-5 mt-5 border-top bg-dark">
-    <p class="text-light mt-5 ms-3 ps-5">&copy; 2020 bike. All rights reserved.</p>
-    <div class="list-unstyled d-flex flex-column">
-      <h5 class="text-light mt-3 me-5 pe-5">Get the App</h5>
-        <div style="height: 100px;"><img src="images/a.png" alt="" class="w-25 h-50"></div>
-        <div style="height: 100px;"><img src="images/playstore.png" alt="" class="w-50 h-75"></div>
+  <div class="row py-5 mt-5 bg-dark">
+    <div class="col-md-8">
+      <p class="text-light mt-5 ms-3 ps-5">&copy; 2020 bike. All rights reserved.</p>
+    </div>
+    <div class="col-md-4">
+      <h5 class="text-light">Get the App</h5>
+    <div class="img-container">
+      <div><img class="img-fluid w-25" src="images/app-store.png" alt=""></div>
+      <div><img class="img-fluid w-25 mt-2" src="images/google-play.png" alt=""></div>
+    </div>
     </div>
   </div>
 </footer>
